@@ -28,11 +28,10 @@ li a:hover {
 <h2>Gray Vertical Navbar</h2>
 
 <ul>
-  <li><a href="#home">Home</a></li>
-  <li><a href="#news">News</a></li>
-  <li><a href="#contact">Contact</a></li>
-  <li><a href="#about">About</a></li>
-</ul>
+    <a href="index.html">home</a>
+     <a href="binairstelsel.html">uitleg binair stelsel</a>   
+     <a href="kleurmodellen.html">kleurmodellen</a>
+    </ul>
 
 </body>
 </html>
