@@ -18,6 +18,9 @@ li a {
 li a:hover {
   background-color: #555555;
   color: white;}
+
+
+
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -62,12 +65,4 @@ ul.topnav li a:hover {
 </head>
 <body>
 
-<header>
-  <h1>My Header</h1>
-</header>
-
-<ul class="topnav">
-  <li><a href="#"index.html>home</a></li>
-  <li><a href="#"binairstelsel.html>binair</a></li>
-  <li><a href="#"kleurmodellen.html>kleurmodellen</a></li>
-</ul>
+ 
