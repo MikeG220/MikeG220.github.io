@@ -1,101 +1,136 @@
-<html>
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Mijn wereld</title>
 
-    <head>
+    <!-- Koppeling met het gezamenlijke CSS-bestand -->
+    <link rel="stylesheet" href="opmaak.css">
+</head>
+<body>
 
-     <link rel="stylesheet" type="text/css" href="opmaak.css">
-=======
-         <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
+    <!-- Navigatiemenu: hetzelfde menu staat op alle pagina's -->
+    <header>
+        <h2>🌊 Mijn wereld</h2>
+        <nav>
+            <a class="actief" href="index.html">Home</a>
+            <a href="invoer.html">Informatica</a>
+            <a href="binairstelsel.html">Binair</a>
+            <a href="kleurmodellen.html">Kleuren</a>
+            <a href="compressie.html">Compressie</a>
+            <a href="ai.html">AI</a>
+        </nav>
+    </header>
 
-body {
-  margin: 0;
-  padding: 0;
-}
+    <!-- Welkomstgedeelte -->
+    <div class="hero">
+        <h1>Welkom op mijn website!</h1>
+        <p>Ontdek mijn interesses, kanopolo en de wereld van informatica.</p>
+        <a class="knop" href="#over-mij">Over mij</a>
+        <a class="knop" href="#kanopolo">Ontdek kanopolo</a>
+    </div>
 
-header {
-  background-color: #f1f1f1;
-  padding: 10px;
-  text-align: center;
-}
+    <main>
+        <!-- Persoonlijke introductie -->
+        <section id="over-mij">
+            <h2>👋 Over mij</h2>
+            <p>
+                Hoi! Ik ben [jouw naam]. Op deze website vertel ik
+                over mijn interesses en wat ik leer bij informatica.
+            </p>
+            <p>
+                In mijn vrije tijd houd ik me bezig met [jouw hobby's].
+                Een onderwerp dat bij mij past is kanopolo.
+                Daarnaast ontdek ik hoe computers en AI werken.
+            </p>
+            <!-- Pas deze tekst aan zodat hij echt over jou gaat -->
+        </section>
 
-/* Style the topnav */
-ul.topnav {
-  display: flex;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  background-color: #333333;
-}
+        <!-- Informatie over kanopolo -->
+        <section id="kanopolo">
+            <h2>🛶 Kanopolo</h2>
 
-/* Style links in topnav */
-ul.topnav li a {
-  display: block;
-  color: #f1f1f1;
-  padding: 14px 16px;
-  text-decoration: none;
-}
+            <img
+                class="afbeelding"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR28WewP5qmOoL2TEhskebpTrldF9g95ru6Ild_ZziuuQ&amp;s=10"
+                alt="Kanopolo voor kids bij L.K.V. Rijnland">
 
-/* Change color on hover */
-ul.topnav li a:hover {
-  background-color: #dddddd;
-  color: black;
-}
-</style>
+            <p>
+                Kanopolo is een teamsport op het water.
+                De spelers zitten in kajaks en proberen de bal
+                in het doel van de tegenstander te gooien.
+                Het doel hangt boven het water.
+            </p>
 
-        <link rel="stylesheet" type="text/css" href="opmaak.css">
+            <div class="kaarten">
+                <div class="kaart">
+                    <h3>🥅 Scoren</h3>
+                    <p>Probeer de bal in het doel van de tegenstander te gooien.</p>
+                </div>
 
-<style>
-     body {background-color: rgb(86, 71, 222);}
-</style>
+                <div class="kaart">
+                    <h3>🤝 Samenwerken</h3>
+                    <p>Je speelt samen, geeft passes en bedenkt aanvallen.</p>
+                </div>
 
-<ul class="topnav">
-  <li><a href="#"index.html>home</a></li>
-  <li><a href="#"binairstelsel.html>binair</a></li>
-  <li><a href="#"kleurmodellen.html>kleurmodellen</a></li>
-</ul>
+                <div class="kaart">
+                    <h3>💦 Vaardigheid</h3>
+                    <p>Je hebt balans, snelheid en een goede peddeltechniek nodig.</p>
+                </div>
+            </div>
 
-    </head>
+            <div class="video">
+                <h3>🎬 Video over kanopolo</h3>
+                <p>
+                    <a href="https://www.youtube.com/results?search_query=kanopolo+wedstrijd+uitleg"
+                       target="_blank" rel="noopener noreferrer">
+                        Bekijk kanopolo op YouTube
+                    </a>
+                </p>
+                <p>
+                    Waarom deze video? Met wedstrijdbeelden kun je zien
+                    hoe spelers peddelen, samenwerken en proberen te scoren.
+                </p>
+            </div>
+        </section>
 
-    <body>
-        <header>
-  <h1>Homepagina</h1>
-</header>
-<nav class="navbar">
-    <a href="#" class="logo">MijnWebsite</a>
+        <!-- Verwijzingen naar de andere pagina's -->
+        <section>
+            <h2>📚 Ontdek de onderwerpen</h2>
+            <div class="kaarten">
+                <div class="kaart">
+                    <h3>💻 Informatica</h3>
+                    <p>Hoe verwerkt een computer gegevens?</p>
+                    <a href="invoer.html">Lees meer →</a>
+                </div>
+                <div class="kaart">
+                    <h3>🔢 Binair</h3>
+                    <p>Leer rekenen met nullen en enen.</p>
+                    <a href="binair.html">Lees meer →</a>
+                </div>
+                <div class="kaart">
+                    <h3>🎨 Kleurmodellen</h3>
+                    <p>Ontdek hoe digitale kleuren werken.</p>
+                    <a href="kleurmodellen.html">Lees meer →</a>
+                </div>
+                <div class="kaart">
+                    <h3>🖼️ Compressie</h3>
+                    <p>Ontdek bitmap, vector en bestandsformaten.</p>
+                    <a href="compressie.html">Lees meer →</a>
+                </div>
+                <div class="kaart">
+                    <h3>🤖 AI</h3>
+                    <p>Ontdek kunstmatige intelligentie.</p>
+                    <a href="ai.html">Lees meer →</a>
+                </div>
+            </div>
+        </section>
+    </main>
 
-
-    <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="binairstelsel.html">binair</a></li>
-        <li><a href="kleurmodellen.html">kleurmodellen</a></li>
-    </ul>
-</nav>
-
-
-
-
-<img src="kanopolo" style="position:fixed; top: 50px; right: 10px;">
-
-    
-    <ul>
-        <li> vet; </li>
-        <li> cursief; </li>
-        <li>onderstreept;</li>
-        <li>tekstkleur;</li>
-        <li>tekstgrootte;</li>
-        <li>uitlijning;</li>
-    </ul>
-
-    <h2> dit is header 2 </h2>
-    <h3> dit is header 3 </h3>
-    <h4> dit is header 4 </h4>
-    <h5> dit is header 5 </h5>
-    <h6> dit is header 6 </h6>
-
-    </body>
-
+    <footer>
+        <p>Mijn wereld | Kanopolo & Informatica</p>
+        <p>Gemaakt door [jouw naam] • 2026</p>
+    </footer>
+</body>
 </html>

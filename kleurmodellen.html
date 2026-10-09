@@ -1,73 +1,115 @@
-<html>
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kleurmodellen | Mijn wereld</title>
+    <link rel="stylesheet" href="opmaak.css">
+</head>
+<body>
+    <header>
+        <h2>🌊 Mijn wereld</h2>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="invoer.html">Informatica</a>
+            <a href="binairstelsel.html">Binair</a>
+            <a class="actief" href="kleurmodellen.html">Kleuren</a>
+            <a href="compressie.html">Compressie</a>
+            <a href="ai.html">AI</a>
+        </nav>
+    </header>
 
-    <head>
-<link rel="stylesheet" type="text/css" href="opmaak.css">
+    <div class="hero">
+        <h1>🎨 Kleurmodellen</h1>
+        <p>Hoe maken beeldschermen en printers kleuren?</p>
+    </div>
 
-<title>kleurmodellen</title>
- <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
+    <main>
+        <section>
+            <h2>Wat is een kleurmodel?</h2>
+            <p>
+                Een kleurmodel is een manier om kleuren te beschrijven
+                met behulp van kleurcomponenten. RGB en CMYK zijn twee
+                bekende kleurmodellen.
+            </p>
+        </section>
 
-body {
-  margin: 0;
-  padding: 0;
-}
+        <section>
+            <h2>RGB: kleuren op een scherm</h2>
+            <p>
+                RGB staat voor rood (Red), groen (Green) en blauw (Blue).
+                Een scherm mengt licht van deze drie kleuren.
+                Door de hoeveelheid licht te veranderen, ontstaan andere kleuren.
+            </p>
 
-header {
-  background-color: #f1f1f1;
-  padding: 10px;
-  text-align: center;
-}
+            <!-- Deze drie vlakken laten de RGB-basiskleuren zien -->
+            <div class="kleuren">
+                <div class="kleur rood">Rood</div>
+                <div class="kleur groen">Groen</div>
+                <div class="kleur blauw">Blauw</div>
+            </div>
 
-/* Style the topnav */
-ul.topnav {
-  display: flex;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  background-color: #333333;
-}
+            <p>
+                Bij RGB ontstaat wit als rood, groen en blauw alle drie
+                op maximale intensiteit staan. Bij afwezigheid van licht
+                is het scherm zwart.
+            </p>
+        </section>
 
-/* Style links in topnav */
-ul.topnav li a {
-  display: block;
-  color: #f1f1f1;
-  padding: 14px 16px;
-  text-decoration: none;
-}
+        <section>
+            <h2>CMYK: kleuren op papier</h2>
+            <p>
+                CMYK staat voor cyaan, magenta, geel (Yellow) en zwart
+                (Key/Black). Dit kleurmodel wordt vooral gebruikt bij
+                printers en drukwerk.
+            </p>
+            <p>
+                Inkt absorbeert delen van het licht. Daarom werkt CMYK
+                anders dan RGB, dat juist licht toevoegt.
+            </p>
+        </section>
 
-/* Change color on hover */
-ul.topnav li a:hover {
-  background-color: #dddddd;
-  color: black;
-}
-</style>
+        <section>
+            <h2>Wat is het verschil?</h2>
+            <div class="kaarten">
+                <div class="kaart">
+                    <h3>RGB</h3>
+                    <p>Voor beeldschermen, telefoons, televisies en websites.</p>
+                </div>
+                <div class="kaart">
+                    <h3>CMYK</h3>
+                    <p>Voor printers, flyers, posters en ander drukwerk.</p>
+                </div>
+            </div>
+        </section>
 
-<style>
-    body {background-color: rgb(86, 71, 222);}
-</style>
-    </head>
+        <section class="video">
+            <h2>🎬 Video over RGB en CMYK</h2>
+            <a href="https://www.youtube.com/results?search_query=RGB+CMYK+verschil+uitleg+Nederlands"
+               target="_blank" rel="noopener noreferrer">
+                Bekijk uitleg over RGB en CMYK →
+            </a>
+            <p>
+                Waarom deze video? Met voorbeelden van beeldschermen
+                en drukwerk kun je begrijpen waarom dezelfde kleur er
+                op een scherm soms anders uitziet dan op papier.
+                Bekijk de video en controleer de uitleg zelf.
+            </p>
+        </section>
 
-    <body>
-              <header>
-  <h1>Homepagina</h1>
-</header>
+        <section>
+            <h2>Wat heb je geleerd?</h2>
+            <p>
+                RGB werkt met licht en wordt gebruikt voor schermen.
+                CMYK werkt met inkt en wordt vooral gebruikt voor drukwerk.
+            </p>
+            <a class="knop" href="compressie.html">Volgend onderwerp: compressie →</a>
+        </section>
+    </main>
 
-<nav class="navbar">
-    <a href="#" class="logo">MijnWebsite</a>
-
-    <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="binairstelsel.html">binair</a></li>
-        <li><a href="kleurmodellen.html">kleurmodellen</a></li>
-    </ul>
-</nav>
-
-
-
-    </body>
-
+    <footer>
+        <p>Mijn wereld | Kleurmodellen</p>
+        <p>Gemaakt door [jouw naam] • 2026</p>
+    </footer>
+</body>
 </html>

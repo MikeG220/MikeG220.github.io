@@ -1,59 +1,201 @@
-
-/* Algemene styling */
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
-/* Navigation bar */
-.navbar {
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f0f8fa;
+    color: #183344;
+    line-height: 1.7;
+}
+
+/* Het menu bovenaan iedere pagina */
+header {
+    background: #073b4c;
+    color: white;
+    padding: 18px 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #0f172a;
-    padding: 18px 8%;
-    font-family: Arial, sans-serif;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
-/* Logo */
-.logo {
-    color: #ffffff;
-    font-size: 24px;
-    font-weight: bold;
-    text-decoration: none;
+header h2 {
+    color: #66e3dc;
+    margin: 0;
 }
 
-/* Navigatielinks */
-.nav-links {
+nav {
     display: flex;
-    list-style: none;
-    gap: 30px;
+    flex-wrap: wrap;
+    gap: 6px;
 }
 
-.nav-links a {
-    color: #e2e8f0;
+nav a {
+    color: white;
     text-decoration: none;
-    font-size: 16px;
-    transition: color 0.3s ease;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 14px;
 }
 
-/* Hover-effect */
-.nav-links a:hover {
-    color: #38bdf8;
+/* Een kleurverandering wanneer je over een menu-item gaat */
+nav a:hover,
+nav a.actief {
+    background: #118ab2;
 }
 
-/* Mobiele schermen */
+/* De grote titel bovenaan een pagina */
+.hero {
+    background: linear-gradient(135deg, #073b4c, #118ab2);
+    color: white;
+    text-align: center;
+    padding: 55px 20px;
+}
+
+.hero h1 {
+    font-size: clamp(30px, 5vw, 48px);
+    margin-bottom: 10px;
+}
+
+/* De hoofdinhoud blijft netjes in het midden */
+main {
+    max-width: 1050px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Witte vlakken voor de verschillende onderdelen */
+section {
+    background: white;
+    padding: 28px;
+    margin: 25px 0;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px #073b4c12;
+}
+
+h2 {
+    color: #087e8b;
+    border-bottom: 3px solid #ffb703;
+    padding-bottom: 8px;
+}
+
+h3 {
+    color: #073b4c;
+}
+
+/* Afbeeldingen passen zich aan de beschikbare ruimte aan */
+.afbeelding {
+    display: block;
+    width: 100%;
+    max-height: 430px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin: 18px 0;
+}
+
+/* Kaarten voor voorbeelden en begrippen */
+.kaarten {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 16px;
+    margin: 20px 0;
+}
+
+.kaart {
+    background: #e8f7f8;
+    padding: 18px;
+    border-left: 5px solid #118ab2;
+    border-radius: 10px;
+}
+
+/* Knoppen en gewone links */
+.knop {
+    display: inline-block;
+    background: #ffb703;
+    color: #183344;
+    padding: 10px 18px;
+    border-radius: 22px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.knop:hover {
+    background: #ffd166;
+}
+
+a {
+    color: #087e8b;
+}
+
+.video {
+    background: #f0f8fa;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 25px;
+}
+
+/* Video's passen zich aan aan het scherm */
+iframe {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: 0;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+
+/* Voorbeeldkleuren bij de pagina over kleurmodellen */
+.kleuren {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    text-align: center;
+}
+
+.kleur {
+    color: white;
+    padding: 22px 5px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.rood { background: #f00; }
+.groen { background: #00a83b; }
+.blauw { background: #05f; }
+
+/* Onderaan iedere pagina */
+footer {
+    background: #073b4c;
+    color: white;
+    text-align: center;
+    padding: 24px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+/* Kleine schermen, zoals mobiele telefoons */
 @media (max-width: 600px) {
-    .navbar {
-        flex-direction: column;
-        gap: 20px;
+    header {
+        justify-content: center;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    section {
         padding: 20px;
     }
 
-    .nav-links {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
+    .kleuren {
+        grid-template-columns: 1fr;
     }
 }

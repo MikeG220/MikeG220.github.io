@@ -1,81 +1,113 @@
-<html> <!--dit is het html-element-->
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binair stelsel | Mijn wereld</title>
+    <link rel="stylesheet" href="opmaak.css">
+</head>
+<body>
+    <header>
+        <h2>🌊 Mijn wereld</h2>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="invoer.html">Informatica</a>
+            <a class="actief" href="binairstelsel.html">Binair</a>
+            <a href="kleurmodellen.html">Kleuren</a>
+            <a href="compressie.html">Compressie</a>
+            <a href="ai.html">AI</a>
+        </nav>
+    </header>
 
-    <head>
-        <link rel="stylesheet" type="text/css" href="opmaak.css">
+    <div class="hero">
+        <h1>🔢 Het binaire stelsel</h1>
+        <p>De taal van computers bestaat uit nullen en enen.</p>
+    </div>
 
-<title>binair stelsel</title>
+    <main>
+        <section>
+            <h2>Wat is binair?</h2>
+            <p>
+                Mensen gebruiken meestal het decimale stelsel met tien
+                cijfers: 0 tot en met 9. Computers gebruiken het binaire
+                stelsel, dat maar twee cijfers heeft: 0 en 1.
+            </p>
+            <p>
+                Een binair cijfer heet een bit. Met combinaties van bits
+                kunnen computers getallen, tekst en afbeeldingen opslaan.
+            </p>
+        </section>
 
+        <section>
+            <h2>Hoe reken je binair?</h2>
+            <p>
+                De plaatswaarden van een binair getal zijn machten van twee.
+                Van rechts naar links zijn de eerste waarden 1, 2, 4, 8 en 16.
+            </p>
 
- <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
+            <div class="kaart">
+                <h3>Voorbeeld: 101 in binair</h3>
+                <p>De plaatswaarden zijn 4, 2 en 1.</p>
+                <p>1 × 4 + 0 × 2 + 1 × 1 = 5</p>
+                <p>Dus: binair 101 = decimaal 5.</p>
+            </div>
 
-body {
-  margin: 0;
-  padding: 0;
-}
+            <h3>Een ander voorbeeld</h3>
+            <p>
+                Binair 110 is gelijk aan 1 × 4 + 1 × 2 + 0 × 1.
+                Dat is 6 in het decimale stelsel.
+            </p>
+        </section>
 
-header {
-  background-color: #f1f1f1;
-  padding: 10px;
-  text-align: center;
-}
+        <section>
+            <h2>🎮 Oefen met Binary Bonanza</h2>
+            <p>
+                Oefen met het omzetten van getallen en ontdek hoe het
+                binaire stelsel werkt.
+            </p>
 
-/* Style the topnav */
-ul.topnav {
-  display: flex;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  background-color: #333333;
-}
+            <!-- De afbeelding is een klikbare link naar Binary Bonanza -->
+            <a href="https://www.google.com/search?q=Binary+Bonanza"
+               target="_blank" rel="noopener noreferrer">
+                <img
+                    class="afbeelding"
+                    src="https://placehold.co/900x280/073b4c/66e3dc?text=BINARY+BONANZA"
+                    alt="Binary Bonanza opzoeken">
+            </a>
 
-/* Style links in topnav */
-ul.topnav li a {
-  display: block;
-  color: #f1f1f1;
-  padding: 14px 16px;
-  text-decoration: none;
-}
+            <p>
+                Klik op de afbeelding om Binary Bonanza op te zoeken.
+                Vervang de zoeklink door de directe link van het juiste spel
+                als je die hebt gevonden.
+            </p>
+        </section>
 
-/* Change color on hover */
-ul.topnav li a:hover {
-  background-color: #dddddd;
-  color: black;
-}
-</style>
+        <section class="video">
+            <h2>🎬 Video over het binaire stelsel</h2>
+            <a href="https://www.youtube.com/results?search_query=binaire+getallen+uitleg+Nederlands"
+               target="_blank" rel="noopener noreferrer">
+                Bekijk uitleg over binaire getallen →
+            </a>
+            <p>
+                Waarom deze video? Met een uitleg en rekenvoorbeelden
+                kun je beter begrijpen hoe je binaire getallen omzet.
+                Bekijk de video en oefen daarna zelf met de voorbeelden.
+            </p>
+        </section>
 
+        <section>
+            <h2>Wat heb je geleerd?</h2>
+            <p>
+                Het binaire stelsel gebruikt alleen 0 en 1. Iedere positie
+                heeft een waarde die een macht van twee is.
+            </p>
+            <a class="knop" href="kleurmodellen.html">Volgend onderwerp: kleuren →</a>
+        </section>
+    </main>
 
-<meta charset="utf-8"> 
-<style>
-     body {background-color: rgb(86, 71, 222);}
-</style>
-    </head>
-
-    <body>
-uitleg binairstelsel
-      <header>
-  <h1>Homepagina</h1>
-</header>
-
-<nav class="navbar">
-    <a href="#" class="logo">MijnWebsite</a>
-
-    <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="binairstelsel.html">binair</a></li>
-        <li><a href="kleurmodellen.html">kleurmodellen</a></li>
-    </ul>
-</nav>
-
-
-
-
-<img src="binair.png" alt="binairstelsel">
-
-    </body>
-
+    <footer>
+        <p>Mijn wereld | Het binaire stelsel</p>
+        <p>Gemaakt door [jouw naam] • 2026</p>
+    </footer>
+</body>
 </html>
